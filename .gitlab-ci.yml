@@ -1,0 +1,10 @@
+stages:
+  - build
+  - test
+
+build-code-job:
+  stage: build
+  tags:
+  - build
+  script:
+    - ng build
