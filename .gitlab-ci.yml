@@ -2,7 +2,7 @@ stages:
   - build
   - test
 
-build-code-job:
+build-Test:
   stage: build
   tags:
   - build
@@ -10,3 +10,10 @@ build-code-job:
     - npm install
     - ng build
 
+Lint-Test:
+  stage: build
+  tags:
+  - build
+  script:
+    - npm install
+    - ng lint
