@@ -11,9 +11,9 @@ build-Test:
     - ng build
 
 Lint-Test:
-  stage: build
+  stage: test
   tags:
-  - build
+  - test
   script:
     - npm install
     - ng lint
