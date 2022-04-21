@@ -7,4 +7,5 @@ build-code-job:
   tags:
   - build
   script:
+    - npm install
     - ng build
