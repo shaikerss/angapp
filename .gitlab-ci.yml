@@ -9,3 +9,4 @@ build-code-job:
   script:
     - npm install
     - ng build
+    - echo "Totally ok"
