@@ -31,6 +31,7 @@ Deploy:
     - mv dist distV1
     - git add -A
     - git commit -m "uploadversion 1"
+    - git pull http://shaikerss:R!kons250394@gitlab.com/appo2/angapprepo  HEAD:main
     - git push http://shaikerss:R!kons250394@gitlab.com/appo2/angapprepo  HEAD:main
   artifacts:
     paths:
