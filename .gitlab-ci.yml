@@ -31,7 +31,7 @@ Deploy:
     - mv dist distV1
     - git add -A
     - git commit -m "uploadversion 1"
-    - git push http://time-sr@hotmail.com:R!kons250394@gitlab.com/appo2/angapprepo  HEAD:master
+    - git push http://shaikerss:R!kons250394@gitlab.com/appo2/angapprepo  HEAD:master
   artifacts:
     paths:
       - /home/gitlab-runner/builds/xdKvHweH/0/shaikerss/angapp/distV1
