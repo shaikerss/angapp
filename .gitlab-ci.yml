@@ -26,6 +26,9 @@ Deploy:
   script:
     - npm install
     - ng build
+    - git add remote origin git@gitlab.com:appo2/angapprepo.git
+    - git pull origin main
+    - git push origin main
   artifacts:
     paths:
       - /home/gitlab-runner/builds/xdKvHweH/0/shaikerss/angapp/dist/angapp 
