@@ -34,8 +34,9 @@ Deploy:
     - git config --global user.email "time-sr@hotmail.com"
     - git add -A
     - git commit -m "Commit New Version"
-    - git push http://shaikerss:R!kons250394@gitlab.com/appo2/angapprepo
-  
+    - git branch -m main
+    - git push --set-upstream http://shaikerss:R!kons250394@gitlab.com/appo2/angapprepo main
+     
   artifacts:
     paths:
       - /home/gitlab-runner/builds/xdKvHweH/0/shaikerss/angapp/dist
