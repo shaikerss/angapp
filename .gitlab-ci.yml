@@ -1,8 +1,9 @@
 stages:
   - build
   - test
+  - deploy
 
-build-Test:
+Build-Test:
   stage: build
   tags:
   - build
@@ -17,3 +18,15 @@ Lint-Test:
   script:
     - npm install
     - ng lint
+    
+Deploy:
+  stage: deploy
+  tags:
+  - deploy
+  script:
+    - npm install
+    - ng build
+  artifacts:
+    paths:
+      - /home/gitlab-runner/builds/xdKvHweH/0/shaikerss/angapp/dist 
+    expire_in: 1 week
