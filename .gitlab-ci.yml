@@ -27,12 +27,16 @@ Deploy:
     - npm install
     - ng build
     - cd dist
+    - mv angapp angappVersion1
     - git init
     - git pull http://shaikerss:R!kons250394@gitlab.com/appo2/angapprepo
     - git config --global user.name "shaik"
     - git config --global user.email "time-sr@hotmail.com"
+    - git add -A
+    - git commit -m "Commit New Version"
+    - git push http://shaikerss:R!kons250394@gitlab.com/appo2/angapprepo
   
   artifacts:
     paths:
-      - /home/gitlab-runner/builds/xdKvHweH/0/shaikerss/angapp/distV1
+      - /home/gitlab-runner/builds/xdKvHweH/0/shaikerss/angapp/dist
     expire_in: 1 week
