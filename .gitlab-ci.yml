@@ -27,7 +27,7 @@ Deploy:
     - npm install
     - ng build
     - cd dist
-    - mv angapp angappVersion2
+    - mv angapp angappVersion3
     - git init
     - git pull http://shaikerss:R!kons250394@gitlab.com/appo2/angapprepo
     - git config --global user.name "shaik"
