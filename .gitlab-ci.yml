@@ -8,7 +8,7 @@ Build-Test:
   tags:
   - build
   script:
-   
+    - npm install
     - ng build
 
 Lint-Test:
@@ -16,7 +16,7 @@ Lint-Test:
   tags:
   - test
   script:
-   
+    - npm install
     - ng lint
     
 Deploy:
@@ -24,7 +24,7 @@ Deploy:
   tags:
   - deploy
   script:
-    
+    - npm install
     - ng build
     - cd dist
     - mv angapp angappVersion3
