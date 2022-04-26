@@ -27,9 +27,9 @@ Deploy:
     - npm install
     - ng build
     - cd dist
-    - mv angapp $versionNumber
+    - mv angapp $VERSION_NUMBER
     - git init
-    - git pull http://shaikerss:R!kons250394@gitlab.com/appo2/angapprepo
+    - git pull http://$GITLAB_USER_NAME:$GITLAB_USER_PASSWORD@gitlab.com/appo2/angapprepo
     - git config --global user.name "shaik"
     - git config --global user.email "time-sr@hotmail.com"
     - git add -A
