@@ -39,5 +39,5 @@ Deploy:
      
   artifacts:
     paths:
-      - /home/gitlab-runner/builds/xdKvHweH/0/shaikerss/angapp/
+      - /shaikerss/angapp/dist/
     expire_in: 1 week
