@@ -27,7 +27,7 @@ Deploy:
     - npm install
     - ng build
     - cd dist
-    - mv angapp $VERSION_NUMBER
+    - mv angapp artifacts
     - git init
     - git pull http://$GITLAB_USER_NAME:$GITLAB_USER_PASSWORD@gitlab.com/appo2/angapprepo
     - git config --global user.name "shaik"
@@ -35,7 +35,9 @@ Deploy:
     - git add -A
     - git commit -m "Commit New Version"
     - git branch -m main
-    - git push --set-upstream http://shaikerss:R!kons250394@gitlab.com/appo2/angapprepo main
+    - git push --set-upstream http://$GITLAB_USER_NAME:$GITLAB_USER_PASSWORD@gitlab.com/appo2/angapprepo main
+    - 
+    
      
   artifacts:
     paths:
