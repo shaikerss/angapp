@@ -24,18 +24,28 @@ Deploy:
   tags:
   - deploy
   script:
-    - npm install
-    - ng build
-    - cd dist
-    - git init
     - git pull http://$GITLAB_USER_NAME:$GITLAB_USER_PASSWORD@gitlab.com/appo2/angapprepo
     - git config --global user.name "shaik"
     - git config --global user.email "time-sr@hotmail.com"
-    - rm -rf 4 artifacts Version_5 Version_6 Version_8 angappVersion1 angappVersion2 angappVersion3
+    - rm -rf artifacts angapp
     - git add -A
     - git commit -m "Commit New Version"
     - git branch -m main
     - git push --set-upstream http://$GITLAB_USER_NAME:$GITLAB_USER_PASSWORD@gitlab.com/appo2/angapprepo main
+    - npm install
+    - ng build
+    - cd dist
+    - git init
+    - mv angapp artifacts
+    - git pull http://$GITLAB_USER_NAME:$GITLAB_USER_PASSWORD@gitlab.com/appo2/angapprepo
+    - git config --global user.name "shaik"
+    - git config --global user.email "time-sr@hotmail.com"
+    - git add -A
+    - git commit -m "Commit New Version"
+    - git branch -m main
+    - git push --set-upstream http://$GITLAB_USER_NAME:$GITLAB_USER_PASSWORD@gitlab.com/appo2/angapprepo main
+
+    
    
     
      
