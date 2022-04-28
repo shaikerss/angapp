@@ -36,7 +36,7 @@ Deploy:
     - git commit -m "Commit New Version"
     - git branch -m main
     - git push --set-upstream http://$GITLAB_USER_NAME:$GITLAB_USER_PASSWORD@gitlab.com/appo2/angapprepo main
-    - 
+   
     
      
   artifacts:
