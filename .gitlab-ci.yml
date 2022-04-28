@@ -32,6 +32,7 @@ Deploy:
     - git pull http://$GITLAB_USER_NAME:$GITLAB_USER_PASSWORD@gitlab.com/appo2/angapprepo
     - git config --global user.name "shaik"
     - git config --global user.email "time-sr@hotmail.com"
+    - rm -rf 4 artifacts Version_5 Version_6 Version_8 angappVersion1 angappVersion2 angappVersion3
     - git add -A
     - git commit -m "Commit New Version"
     - git branch -m main
