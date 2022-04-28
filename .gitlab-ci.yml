@@ -10,6 +10,7 @@ Build-Test:
   script:
     - npm install
     - ng build
+    - aws --version
 
 Lint-Test:
   stage: test
