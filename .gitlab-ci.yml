@@ -24,6 +24,8 @@ Deploy:
   tags:
   - deploy
   script:
+    - rm -rf .git
+    - git init
     - git pull http://$GITLAB_USER_NAME:$GITLAB_USER_PASSWORD@gitlab.com/appo2/angapprepo
     - git config --global user.name "shaik"
     - git config --global user.email "time-sr@hotmail.com"
