@@ -27,7 +27,6 @@ Deploy:
     - npm install
     - ng build
     - cd dist
-    - mv angapp artifacts
     - git init
     - git pull http://$GITLAB_USER_NAME:$GITLAB_USER_PASSWORD@gitlab.com/appo2/angapprepo
     - git config --global user.name "shaik"
