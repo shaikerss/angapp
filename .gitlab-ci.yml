@@ -46,5 +46,5 @@ Deploy:
      
   artifacts:
     paths:
-      - /shaikerss/angapp/dist/
+      - artifacts/
     expire_in: 1 week
