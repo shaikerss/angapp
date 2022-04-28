@@ -33,7 +33,7 @@ Deploy:
     - git pull http://$GITLAB_USER_NAME:$GITLAB_USER_PASSWORD@gitlab.com/appo2/angapprepo
     - git config --global user.name "shaik"
     - git config --global user.email "time-sr@hotmail.com"
-    - rm -rf angapp artifacts
+    - mv artifacts $VERSION_NUMBER
     - mv artifacts_stage artifacts
     - git add -A
     - git commit -m "Commit New Version"
